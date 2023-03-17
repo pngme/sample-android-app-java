@@ -45,9 +45,9 @@ public class PermissionFragment extends Fragment {
                         "LAST_NAME",
                         "EMAIL",
                         "PHONE_NUMBER",
-                        "",
+                        "", // external id
                         "ACME BANK",
-                        false,
+                        false, // hide Pngme Dialog
                         PermissionFragment.this::onComplete);
             }
         });
