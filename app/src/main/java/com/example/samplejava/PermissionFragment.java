@@ -37,7 +37,11 @@ public class PermissionFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 MainActivity mainActivity = (MainActivity) getActivity();
-                PngmeSdk.INSTANCE.resetPermissionFlow(mainActivity);
+
+                if (PngmeSdk.INSTANCE.isPermissionGranted(mainActivity)) {
+                    PngmeSdk.INSTANCE.resetPermissionFlow(mainActivity);
+                }
+                
                 PngmeSdk.INSTANCE.go(
                         mainActivity,
                         "PNGME_SDK_TOKEN",
