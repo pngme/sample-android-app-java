@@ -37,7 +37,7 @@ public class PermissionFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 MainActivity mainActivity = (MainActivity) getActivity();
-                PngmeSdk.INSTANCE.resetPermissionFlow(mainActivity);
+                
                 PngmeSdk.INSTANCE.go(
                         mainActivity,
                         "PNGME_SDK_TOKEN",
@@ -47,7 +47,6 @@ public class PermissionFragment extends Fragment {
                         "PHONE_NUMBER",
                         "", // external id
                         "ACME BANK",
-                        false, // hide Pngme Dialog
                         PermissionFragment.this::onComplete);
             }
         });
