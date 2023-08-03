@@ -44,7 +44,7 @@ Add the following dependencies to `/app/build.gradle`.
 
 ```groovy
     dependencies {
-        implementation 'com.github.pngme:android-sdk:4.0.2'
+        implementation 'com.github.pngme:android-sdk:5.0.0'
     }
 ```
 
