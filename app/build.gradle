@@ -32,7 +32,7 @@ android {
 
 dependencies {
     // add pngme sdk
-    implementation 'com.github.pngme:android-sdk:5.0.0'
+    implementation 'com.github.pngme:android-sdk:v6.0.1'
 
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
