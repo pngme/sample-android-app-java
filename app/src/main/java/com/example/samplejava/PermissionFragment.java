@@ -38,7 +38,7 @@ public class PermissionFragment extends Fragment {
             public void onClick(View view) {
                 MainActivity mainActivity = (MainActivity) getActivity();
                 
-                PngmeSdk.INSTANCE.go(
+                PngmeSdk.INSTANCE.goWithCustomDialog(
                         mainActivity,
                         "PNGME_SDK_TOKEN",
                         "FIRST_NAME",
@@ -47,6 +47,7 @@ public class PermissionFragment extends Fragment {
                         "PHONE_NUMBER",
                         "", // external id
                         "ACME BANK",
+                        true, // hasAcceptedTerms
                         PermissionFragment.this::onComplete);
             }
         });
